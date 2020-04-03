@@ -1,0 +1,32 @@
+/* Now let's think about the items. */
+/* Write code to target items. Make the 3rd item twice as wide as the others. Make the 7th item twice as tall as the others. Make the 9th item both twice as tall and twice as wide. */
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* -------------------------------------- */
+/* Additional Visual Styling */
+body {
+  background: #f6f3ea;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+li {
+  padding: 1em;
+  background: #f9423a;
+}
+li:nth-child(3),
+li:nth-child(7),
+li:nth-child(9) {
+  background: #ff9124;
+}

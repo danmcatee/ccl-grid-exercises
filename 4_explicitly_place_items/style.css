@@ -1,0 +1,35 @@
+/* Now let's think about the items. */
+/* Write code to target items. Place the black boxes in the first column, and place the blue boxes  in the second column. Do so in such a way that we can see all of the boxes (none are hidden behind another). */
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* -------------------------------------- */
+/* Additional Visual Styling */
+body {
+  background: #f6f3ea;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+li {
+  padding: 1em;
+  background: #f9423a;
+}
+li:nth-child(2),
+li:nth-child(6) {
+  background: #444;
+}
+li:nth-child(8),
+li:nth-child(10) {
+  background: #4794b8;
+}
