@@ -7,6 +7,17 @@ ul {
   grid-gap: 1rem;
 }
 
+li:nth-child(3) {
+  grid-column: span 2;
+}
+li:nth-child(7) {
+  grid-row: span 2;
+}
+li:nth-child(9) {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
 /* -------------------------------------- */
 /* Additional Visual Styling */
 body {
